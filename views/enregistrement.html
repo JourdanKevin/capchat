@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/enregistrement.css">
+    <script src="/js/md5.js"></script>
+    <script src="/js/enregistrement.js"></script>
+    <script src="/js/axios.js"></script>    
+    <title>Enregistrement</title>
+</head>
+<body>
+    <div class="wrapper fadeInDown" align="center" >
+        <div id="formContent" align="center" class="divSize">
+          <h3>Enregistrement</h3>
+          <form id="myform">
+            <br>
+            <div class="form-row" align="center">
+                <input type="text" class="form-control inputIdent" name="Nom" id="Nom" placeholder="Nom" required>
+                <input type="text"  class="form-control inputIdent" name="Prenom" id="Prenom" placeholder="Prenom" required>
+            </div>
+            <div class="form-row" align="center">
+                <input type="text"  class="form-control inputIdent" name="Pseudo" id="Pseudo" placeholder="Pseudo" required>
+                <input type="email"  class="form-control inputIdent" name="Email" id="Email" placeholder="Email" required>
+                <img class="imgIcon" id="IconMail" width="20" height="20" src="images/icons/error.png" hidden>
+            </div>                
+            <div class="form-row" align="center">
+                <input type="password" class="form-control inputIdent" name="Mdp" id="Mot de passe" placeholder="Mot de passe" required>
+                <input type="password" class="form-control inputIdent" name="Confirm mdp" id="Confirm mdp" placeholder="Confirmation mot de passe" required> 
+                <img class="imgIcon" id="IconPassWord" width="20" height="20" src="images/icons/error.png" hidden>   
+            </div>
+            <input type="button" class="btn btn-primary" onclick="return register()" name="submit" value="Register">  
+            <iframe title="capchat" id="ifrm" class="capchat" frameBorder="0" onload="reziseIframe()" src="http://localhost:3000/capchat"></iframe>                                                        
+            
+          </form>      
+        </div>
+      </div>
+</body>
+</html>

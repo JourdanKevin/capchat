@@ -1,0 +1,18 @@
+.divSize{
+    width: 550px;
+    text-align: center;
+}
+.inputIdent{
+    width: 46%;
+    margin : 1%;
+}
+.capchat{
+    width: 100%;
+}
+.form-row{
+    margin: auto;
+    vertical-align: middle;
+}
+.imgIcon {
+    transform: translateY(70%);
+}

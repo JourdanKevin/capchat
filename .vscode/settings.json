@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "capchat",
+            "database": "capchat",
+            "username": "postgres",
+            "password": "12fb13a3"
+        }
+    ]
+}

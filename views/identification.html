@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identification</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/identification.css">
+    <script src="/js/identification.js"></script>
+    <script src="/js/md5.js"></script>
+    <script src="/js/axios.js"></script>
+</head>
+<body>
+    <div class="wrapper fadeInDown" align="center" >
+        <div id="formContent" align="center" class="divSize">
+          <h3>Authentification</h3>
+          <form id="myform">
+            <br>
+            <input type="text" id="login" class="form-control inputIdent" name="login" placeholder="login" required><br>
+            <input type="password" id="password" class="form-control inputIdent" name="mdp" placeholder="password" required><br>
+            <input type="button" class="btn btn-primary" onclick="return log()" value="Log In">
+          </form>
+          <a class="underlineHover" href="/enregistrement">Pas inscrit?</a>      
+        </div>
+      </div>
+    
+</body>
+</html>
